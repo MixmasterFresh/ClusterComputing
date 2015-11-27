@@ -1,0 +1,8 @@
+# Print out the current working directory path.
+#!/bin/sh -l
+# FILENAME:  bogosort_submit.sub
+
+module load devel
+cd $PBS_O_WORKDIR
+
+mpiexec -n 800 ./bogosort
